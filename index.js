@@ -6,7 +6,7 @@ const { createWorker } = require('tesseract.js');
 
 const app = express();
 app.use(cors());
-app.use(express.json({ limit: '8mb' })); // fotos compactadas cabem tranquilamente aqui
+app.use(express.json({ limit: '50mb' })); // fotos compactadas cabem tranquilamente aqui
 
 const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_KEY);
 
